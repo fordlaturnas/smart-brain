@@ -3,7 +3,8 @@ import React from 'react';
 const Navigation = ({ onRouteChange, isSignedIn }) => {
     if (isSignedIn) {
       return (
-        <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
+        <nav style={{display: 'flex', justifyContent: 'space-between'}}>
+          <p className='f6 link  black pa4  pointer o-20'>@Ford Latunas</p>   
           <p onClick={() => onRouteChange('signout')} className='f3 link dim black underline pa3 pointer'>Sign Out</p>
         </nav>
       );
